@@ -1,0 +1,270 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+@import 'compass';
+
+$couleur-fond : black;
+$couleur-police : #5A5E6B;
+$btn-green : #1ABC9C;
+$btn-yellow: #F1C40F;
+$btn-blue : #5BC0DE;//#3498DB;
+$btn-purple : #884DA7;
+$btn-orange : #FF8000;
+$font-stack: Lucida Grande, sans-sherif;
+
+body{
+background-color:black;
+	font : 2em $font-stack;
+	color : $couleur-police;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+a{
+		color : white;
+	}
+}
+
+.body_black{
+		background-color:black;
+}
+.body_white {
+		background-color: white;
+}
+
+.barre_menu a{
+	color : white;
+}
+.chide{
+	display:none;
+}
+
+.content{
+	padding : 15px;	
+	color : white;
+}
+
+.glyphicon-2x{
+	font-size: 40px;
+}
+
+#simple-menu{
+	margin-left:15px;
+	margin-top:6px;
+}
+
+#bar-top{
+	background-color :$btn-green;
+	width : 100%;
+	height : 60px;
+	position : absolute;
+	left : 0; right : 0; top : 0;
+}
+
+.btn-menu-dg{
+  @include border-radius(5px);
+  @include background-image(linear-gradient(top left, #222, #555));
+  border : solid #555 1px;
+  margin: 7px;
+  
+	h3{
+		margin : auto;
+	}
+	a{
+	color:$couleur-police;
+
+		p{
+		color : #ccc;
+		}
+	}
+	img{
+	margin-left:-15px;
+	@include border-radius(5px)
+	}
+}
+
+.btn-group{
+	padding-left : 1Opx;
+}
+/**   Calendrier ***/
+  #ladate{
+    margin: 15px auto 25px auto;
+    @include border-radius(5px);
+    @include box-shadow(#6E6E6E 2px 2px 8px);
+    border : solid #999 1px;
+    text-align : center;
+    width:400px;
+    background-color : white;
+    
+    #bartop{
+      width:100%;
+       background-color : red;
+       @include border-radius(5px);
+       margin-bottom:2px;
+    }
+    #jour{
+      font-size: 7em;
+      @include border-radius(5px);
+      margin-bottom:2px;
+      color:black;
+      font-weight:bold;
+          height: 250px;
+    }
+    #mois{
+      font-size:3.5em;
+    }
+  }
+  
+ /*************************
+*   Couleurs des boutons
+*************************/
+.btn-green{
+	@include background-image(linear-gradient(top , #ABE6DB, $btn-green));
+}
+.btn-yellow{
+		@include background-image(linear-gradient(top , #F9E7A0, $btn-yellow));
+}
+.btn-blue{
+	@include background-image(linear-gradient(top , #A4DCEC, $btn-blue));
+}
+.btn-purple{
+	@include background-image(linear-gradient(top , #BF9FCF, $btn-purple));
+}
+.btn-orange {
+	@include background-image(linear-gradient(top , #FFC68D, $btn-orange ));
+}
+
+
+/*************************
+ * description des modules 
+ **************************/
+.inter{
+	@include border-radius(5px);
+	@include background-image(linear-gradient(left top, black, #777));
+	border : solid #AAA 1px;
+	@include box-shadow(white);
+	width : 330px;
+	margin-bottom : 20px;
+	.content{
+		height : 155px;
+		padding-top : 30px;
+	}
+	.bandeau{
+		padding : 2px;
+		font-size : 0.95em;
+		text-align : center;
+		@include background-image(linear-gradient( bottom, #333 #111));
+		line-height : 2.2em;
+	}
+	.bouttons{
+		float : right;
+		margin-right : 10px;
+	}
+	.footer{
+		@include background-image(linear-gradient( top, #444, #111));
+		span{
+			font-size : 0.8em;
+		}
+	}
+}
+
+
+.thermo{
+	@include border-radius(5px);
+	@include background-image(linear-gradient(left top, black, #777));
+	 color : white;
+	width : 300px;
+	margin-bottom : 20px;
+	
+	.bandeau{
+		padding : 2px;
+		font-size : 0.95em;
+		text-align : center;
+		line-height : 2.2em;
+	}
+	.content{
+		height : 120px;
+		padding-top : 10px;
+		.image{
+			float : left;
+			width : 110px;
+		}
+
+	}
+	.bouttons{
+		float : right;
+		margin-right : 15px;
+		.degre{
+			font-size : 2.0em;
+			font-height : bold;
+		}
+	}
+	.footer{
+		span{
+			font-size : 0.8em;
+		}
+	}
+}
+/*************************
+* Boutons tableaux de bord
+/**************************/
+.btn_std{
+	@include border-radius(8px);
+	 @include box-shadow(#6E6E6E 2px 2px 8px);
+	//border : solid #444 1px;
+
+	text-align : center;
+	margin-bottom:15px;
+	.content{
+	padding-top : 10px;
+		
+	}
+	.bandeau{
+		padding : 2px;
+		font-size : 1.1em;
+	}
+	.footer{	
+		span{
+			font-size : 0.75em;
+		}
+	}
+	a{
+		color : white;
+	}
+}
+
+/**
+/*  LA meteo 
+*/
+.cadre_meteo{
+	@include border-radius(5px);
+	@include background-image(linear-gradient(left top, black, #777));
+	 @include box-shadow(grey 2px 2px 8px);
+	border : solid #333 1px;
+	color :white;
+	text-align : center;
+	font-size:0.9em;
+	margin-bottom : 20px;
+	padding : 5px;
+	.bandeau_date{
+		padding : 5px;
+		color : white;
+				line-height:2em;
+	}
+	.content{
+		.temp{
+			font-size: 1.2em;
+			@include background-image(linear-gradient( bottom, #333 #111));
+					line-height:2em;
+		}
+	}
+	.bandeau {
+		font-size:0.75em;
+	}
+	
+	.footer {
+		font-size:0.85em;
+		padding : 5px;
+	}
+}

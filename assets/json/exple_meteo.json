@@ -1,0 +1,350 @@
+array(5) {
+  ["cod"]=>
+  string(3) "200"
+  ["message"]=>
+  float(0.0791)
+  ["city"]=>
+  array(6) {
+    ["id"]=>
+    int(3029241)
+    ["name"]=>
+    string(4) "Caen"
+    ["coord"]=>
+    array(2) {
+      ["lon"]=>
+      float(-0.35912)
+      ["lat"]=>
+      float(49.185848)
+    }
+    ["country"]=>
+    string(2) "FR"
+    ["population"]=>
+    int(0)
+    ["sys"]=>
+    array(1) {
+      ["population"]=>
+      int(0)
+    }
+  }
+  ["cnt"]=>
+  int(7)
+  ["list"]=>
+  array(7) {
+    [0]=>
+    array(8) {
+      ["dt"]=>
+      int(1397732400)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        int(18)
+        ["min"]=>
+        float(12.42)
+        ["max"]=>
+        float(19.2)
+        ["night"]=>
+        float(12.42)
+        ["eve"]=>
+        float(17.98)
+        ["morn"]=>
+        int(18)
+      }
+      ["pressure"]=>
+      float(1024.36)
+      ["humidity"]=>
+      int(70)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(802)
+          ["main"]=>
+          string(6) "Clouds"
+          ["description"]=>
+          string(16) "scattered clouds"
+          ["icon"]=>
+          string(3) "03d"
+        }
+      }
+      ["speed"]=>
+      float(2.31)
+      ["deg"]=>
+      int(295)
+      ["clouds"]=>
+      int(32)
+    }
+    [1]=>
+    array(8) {
+      ["dt"]=>
+      int(1397818800)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        float(13.82)
+        ["min"]=>
+        float(7.64)
+        ["max"]=>
+        float(14.1)
+        ["night"]=>
+        float(7.64)
+        ["eve"]=>
+        float(12.26)
+        ["morn"]=>
+        float(11.49)
+      }
+      ["pressure"]=>
+      float(1020.1)
+      ["humidity"]=>
+      int(75)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(801)
+          ["main"]=>
+          string(6) "Clouds"
+          ["description"]=>
+          string(10) "few clouds"
+          ["icon"]=>
+          string(3) "02d"
+        }
+      }
+      ["speed"]=>
+      float(4.16)
+      ["deg"]=>
+      int(22)
+      ["clouds"]=>
+      int(12)
+    }
+    [2]=>
+    array(8) {
+      ["dt"]=>
+      int(1397905200)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        float(12.1)
+        ["min"]=>
+        float(7.1)
+        ["max"]=>
+        float(12.1)
+        ["night"]=>
+        float(7.1)
+        ["eve"]=>
+        float(11.56)
+        ["morn"]=>
+        float(8.15)
+      }
+      ["pressure"]=>
+      float(1013.38)
+      ["humidity"]=>
+      int(77)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(801)
+          ["main"]=>
+          string(6) "Clouds"
+          ["description"]=>
+          string(10) "few clouds"
+          ["icon"]=>
+          string(3) "02d"
+        }
+      }
+      ["speed"]=>
+      int(5)
+      ["deg"]=>
+      int(49)
+      ["clouds"]=>
+      int(12)
+    }
+    [3]=>
+    array(9) {
+      ["dt"]=>
+      int(1397991600)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        float(8.44)
+        ["min"]=>
+        float(7.17)
+        ["max"]=>
+        float(9.47)
+        ["night"]=>
+        float(7.25)
+        ["eve"]=>
+        float(8.91)
+        ["morn"]=>
+        float(7.22)
+      }
+      ["pressure"]=>
+      float(1003.33)
+      ["humidity"]=>
+      int(98)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(501)
+          ["main"]=>
+          string(4) "Rain"
+          ["description"]=>
+          string(13) "moderate rain"
+          ["icon"]=>
+          string(3) "10d"
+        }
+      }
+      ["speed"]=>
+      float(7.33)
+      ["deg"]=>
+      int(237)
+      ["clouds"]=>
+      int(92)
+      ["rain"]=>
+      int(6)
+    }
+    [4]=>
+    array(9) {
+      ["dt"]=>
+      int(1398078000)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        float(14.76)
+        ["min"]=>
+        float(5.9)
+        ["max"]=>
+        float(15.06)
+        ["night"]=>
+        float(7.83)
+        ["eve"]=>
+        float(15.06)
+        ["morn"]=>
+        float(5.9)
+      }
+      ["pressure"]=>
+      float(1003.63)
+      ["humidity"]=>
+      int(0)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(500)
+          ["main"]=>
+          string(4) "Rain"
+          ["description"]=>
+          string(10) "light rain"
+          ["icon"]=>
+          string(3) "10d"
+        }
+      }
+      ["speed"]=>
+      float(2.23)
+      ["deg"]=>
+      int(108)
+      ["clouds"]=>
+      int(0)
+      ["rain"]=>
+      float(0.48)
+    }
+    [5]=>
+    array(9) {
+      ["dt"]=>
+      int(1398164400)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        float(17.26)
+        ["min"]=>
+        float(7.31)
+        ["max"]=>
+        float(17.26)
+        ["night"]=>
+        float(9.72)
+        ["eve"]=>
+        float(15.62)
+        ["morn"]=>
+        float(7.31)
+      }
+      ["pressure"]=>
+      float(1006.52)
+      ["humidity"]=>
+      int(0)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(500)
+          ["main"]=>
+          string(4) "Rain"
+          ["description"]=>
+          string(10) "light rain"
+          ["icon"]=>
+          string(3) "10d"
+        }
+      }
+      ["speed"]=>
+      float(3.32)
+      ["deg"]=>
+      int(30)
+      ["clouds"]=>
+      int(8)
+      ["rain"]=>
+      float(1.15)
+    }
+    [6]=>
+    array(9) {
+      ["dt"]=>
+      int(1398250800)
+      ["temp"]=>
+      array(6) {
+        ["day"]=>
+        float(15.86)
+        ["min"]=>
+        float(10.72)
+        ["max"]=>
+        float(15.93)
+        ["night"]=>
+        float(10.94)
+        ["eve"]=>
+        float(15.93)
+        ["morn"]=>
+        float(10.72)
+      }
+      ["pressure"]=>
+      float(1009.5)
+      ["humidity"]=>
+      int(0)
+      ["weather"]=>
+      array(1) {
+        [0]=>
+        array(4) {
+          ["id"]=>
+          int(501)
+          ["main"]=>
+          string(4) "Rain"
+          ["description"]=>
+          string(13) "moderate rain"
+          ["icon"]=>
+          string(3) "10d"
+        }
+      }
+      ["speed"]=>
+      float(3.34)
+      ["deg"]=>
+      int(8)
+      ["clouds"]=>
+      int(27)
+      ["rain"]=>
+      float(8.18)
+    }
+  }
+}

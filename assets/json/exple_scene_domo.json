@@ -1,0 +1,55 @@
+{
+   "AllowWidgetOrdering" : true,
+   "result" : [
+      {
+         "Favorite" : 1,
+         "HardwareID" : 0,
+         "LastUpdate" : "2014-05-18 22:53:45",
+         "Name" : "Ambiance",
+         "Protected" : false,
+         "Status" : "Off",
+         "Timers" : "false",
+         "Type" : "Group",
+         "UsedByCamera" : false,
+         "idx" : "1"
+      },
+      {
+         "Favorite" : 1,
+         "HardwareID" : 0,
+         "LastUpdate" : "2014-05-18 22:53:54",
+         "Name" : "Guirlande Led",
+         "Protected" : false,
+         "Status" : "Off",
+         "Timers" : "false",
+         "Type" : "Group",
+         "UsedByCamera" : false,
+         "idx" : "2"
+      },
+      {
+         "Favorite" : 0,
+         "HardwareID" : 0,
+         "LastUpdate" : "2014-05-18 23:07:58",
+         "Name" : "Eteindre ttes les lumiÃ¨res",
+         "Protected" : false,
+         "Status" : "Off",
+         "Timers" : "false",
+         "Type" : "Scene",
+         "UsedByCamera" : false,
+         "idx" : "3"
+      },
+      {
+         "Favorite" : 0,
+         "HardwareID" : 0,
+         "LastUpdate" : "2014-05-18 22:51:01",
+         "Name" : "Eteindre chauffage",
+         "Protected" : false,
+         "Status" : "Off",
+         "Timers" : "false",
+         "Type" : "Scene",
+         "UsedByCamera" : false,
+         "idx" : "4"
+      }
+   ],
+   "status" : "OK",
+   "title" : "Scenes"
+}

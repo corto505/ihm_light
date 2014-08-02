@@ -1,0 +1,53 @@
+{
+	"btn" : [
+		{
+			"type" : "btn",
+			"nom" : "Radion FM",
+			"icone" : "music",
+			"couleur" : "btn-blue",
+			"idbtn"  : "40"
+		},
+		{
+			"type" : "btn",
+			"nom" : "Cheminée",
+			"icone" : "check",
+			"couleur" : "btn-purple",
+			"idbtn"  : "44"
+		},
+		{
+			"type" : "btn",
+			"nom" : "Bar-Cuisine",
+			"icone" : "glass",
+			"couleur" : "btn-purple",
+			"idbtn"  : "43"
+		},
+		{
+			"type" : "btn",
+			"nom" : "Lampe Marine",
+			"icone" : "off",
+			"couleur" : "btn-yellow",
+			"idbtn"  : "33"
+		},
+		{
+			"type" : "btn",
+			"nom" : "Chauff - SDB",
+			"icone" : "cloud-upload",
+			"couleur" : "btn-orange",
+			"idbtn"  : "11"
+		},
+		{
+			"type" : "btn",
+			"nom" : "Chauff - Bureau",
+			"icone" : "cloud-upload",
+			"couleur" : "btn-orange",
+			"idbtn"  : "12"
+		},
+		{
+			"type" : "btn",
+			"nom" : "chauff-Chambre",
+			"icone" : "cloud-upload",
+			"couleur" : "btn-orange",
+			"idbtn"  : "15"
+		}
+	]
+}

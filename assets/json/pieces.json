@@ -1,0 +1,44 @@
+[
+{
+  "name"	: "Séjour",
+  "couleur"	: "btn-purple",
+  "url"	: "../../index.php/modules/piece/salle",
+  "icone" : "hand-right",
+  "actif"	: "oui"
+},
+{
+  "name"  : "Chambre RDC",
+  "couleur" : "btn-green",
+  "url" : "../../index.php/modules/piece/chambre",
+  "icone" : "hand-right",
+  "actif" : "oui"
+},
+{
+  "name"  : "Salle de bain",
+  "couleur" : "btn-blue",
+  "url" : "../../index.php/modules/piece/sdb",
+  "icone" : "hand-right",
+  "actif" : "oui"
+},
+{
+  "name"  : "Cuisine",
+  "couleur" : "btn-blue",
+  "url" : "../../index.php/modules/piece/cuisine",
+  "icone" : "hand-right",
+  "actif" : "oui"
+},
+{
+  "name"  : "Couloir",
+  "couleur" : "btn-orange",
+  "url" : "../../index.php/modules/piece/couloir",
+  "icone" : "hand-right",
+  "actif" : "oui"
+},
+{
+  "name"  : "Bureau",
+  "couleur" : "btn-orange",
+  "url" : "../../index.php/modules/piece/bureau",
+  "icone" : "hand-right",
+  "actif" : "oui"
+}
+]

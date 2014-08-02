@@ -1,0 +1,114 @@
+{
+	"tdb" : [
+		{
+			"type" : "tdb",
+			"nom" : "domoticz dump",
+			"icone" : "save",
+			"couleur" : "btn-yellow",
+			"pied" : "Les modules en json",
+			"actif" : true,
+			"url" : "index.php/welcome/domo_dump"
+		},
+		{
+			"type" : "tdb",
+			"nom" : "Domoticz",
+			"icone" : "edit",
+			"couleur" : "btn-orange",
+			"pied" : "Le serveur",
+			"actif" : false,
+			"url" : "http://192.168.0.66:8080"
+		},
+		{
+			"type" : "tdb",
+			"nom" : "States",
+			"icone" : "edit",
+			"couleur" : "btn-blue",
+			"pied" : "Statistiques rbi",
+			"actif" : true,
+			"url" : "index.php/welcome/p_states"
+		},
+		{
+			"type" : "tdb",
+			"nom" : "Monitoring",
+			"icone" : "edit",
+			"couleur" : "btn-orange",
+			"pied" : "Seveur RbiMonitor",
+			"actif" : true,
+			"url" : "http://192.168.0.70:8888/status.html"
+		}
+	],
+	"menu" : [
+		{
+		    "type" : "menu",
+		    "nom" : "Pièces",
+		    "icone" : "tower",
+		    "couleur" : "btn-orange",
+		    "pied" : "Liste des pièces",
+		    "actif" : true,
+		    "url" :  "index.php/welcome/affichepieces"
+	  	},
+		{
+			"type" : "menu",
+			"nom" : "Inter",
+			"icone" : "star",
+			"couleur" : "btn-blue",
+			"pied" : "On/off et lampes",
+			"actif" : true,
+			"url" : "index.php/modules"
+		},
+		{
+			"type" : "menu",
+			"nom" : "Température",
+			"icone" : "dashboard",
+			"couleur" : "btn-blue",
+			"pied" : "Liste Thermos",
+			"actif" : true,
+			"url" : "index.php/modules/thermo"
+		},
+		{
+		    "type" : "menu",
+		    "nom" : "Scènes",
+		    "icone" : "upload",
+		    "couleur" : "btn-blue",
+		    "pied" : "module On/Off",
+		    "actif" : true,
+		    "url" :  "index.php/modules/scenes"
+	  },
+	  {
+		    "type" : "menu",
+		    "nom" : "????",
+		    "icone" : "adjust",
+		    "couleur" : "btn-green",
+		    "pied" : "Les lumières",
+		    "actif" : false,
+		    "url" :  ""
+	  },
+	  {
+		    "type" : "menu",
+		    "nom" : "Volets",
+		    "icone" : "align-justify",
+		    "couleur" : "btn-green",
+		    "pied" : "Cde volets",
+		    "actif" : false,
+		    "url" :  ""
+	  },
+	  {
+		    "type" : "menu",
+		    "nom" : "Scénario",
+		    "icone" : "refresh",
+		    "couleur" : "btn-purple",
+		    "pied" : "Domoticz",
+		    "actif" : false,
+		    "url" :  ""
+	  },
+	  {
+			"type" : "menu",
+			"nom" : "Météo",
+			"icone" : "cloud",
+			"couleur" : "btn-blue",
+			"pied" : "Api Météo",
+			"actif" : true,
+			"url" : "index.php/modules/meteo"
+		}
+	]
+}
