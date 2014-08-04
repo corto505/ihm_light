@@ -2,13 +2,13 @@
 
 class Welcome extends CI_Controller {
 
-	/**
+	/*****************************
 	* Ecran minimaliste => affiche la meteo sur une semaine
 	* Modifiée :  le 28/07/2014
 	* status : ok
 	*/
 	public function index(){
-
+		//var_dump($this->config);die('xxx');
 		$tabIcones = array(
 			'01d' => 'B',
 			'02d' => 'H',
@@ -70,9 +70,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_vw',$data);
 	}
 
-	/**
+	/************************************
 	 * Affiche le contenu du log modules/sed_cde
 	 * @return [type] [description]
+	 * status : ok
 	 */
 	public function trace(){
 		$this->load->helper('file');
@@ -81,7 +82,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('states_vw',$data);
 	}
 
-	/*
+	/*************************************
 	*   AFFICHE La page pour google API speech
 	*/
 	public function speech() 

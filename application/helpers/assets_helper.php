@@ -56,7 +56,7 @@ if(!function_exists('curl_json'))
 
 		// Execute request
 		$result = curl_exec($ch);
-		//echo '<pre/>';var_dump($result);die();
+		//echo '<pre/>';var_dump($result);//die();
 		// Close connection
 		curl_close($ch);
 
@@ -82,11 +82,21 @@ if(!function_exists('prefrences'))
 			case 'domoticz':
 				return "http://192.168.0.66:8080/";
 				break;
-			
+
+			case 'htc_sms':
+				return "http://192.168.0.60:9090/";
+				break;
+
+			case 'phone':
+				return "0689816473";
+				break;
+
 			default:
 				return "!**! erreur de paramètres";
 				break;
 		}
 	}
 }
+
+
 ?>

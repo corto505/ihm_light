@@ -44,7 +44,11 @@
         <span class="glyphicon glyphicon-2x glyphicon-fire"> </span>
     </a>
     
-     <a href="<?php echo base_url() ;?>index.php/welcome/trace" class="btn btn-green ">
+     <a href="<?php echo base_url() ;?>index.php/modules/form_chercher" class="btn btn-green ">
+        <span class="glyphicon glyphicon-2x glyphicon-search"> </span>
+    </a>
+
+    <a href="<?php echo base_url() ;?>index.php/welcome/trace" class="btn btn-green ">
         <span class="glyphicon glyphicon-2x glyphicon-pencil"> </span>
     </a>
 

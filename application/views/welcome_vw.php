@@ -39,7 +39,8 @@
                           <div class="temp_2">
                             <span class="glyphicon-3x" data-icon="<?php echo $value['icone']; ?>"></span>
                               
-                              <span class="temp_detail heure"><?php echo $value['heure'] ?> <span class="temp_detail"  data-icon="'"><?php echo $value['temp'] ?>°</span></span>
+                              <span class="temp_detail  text-info"><?php echo $value['heure'] ?> </span>
+                              <span class="temp_detail heure"  data-icon="'"><?php echo $value['temp'] ?>°</span>
                             
                              <br/>
                              mini:<span class="temp_detail"><?php echo $value['temp_min'] ?>°</span>

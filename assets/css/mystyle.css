@@ -4,6 +4,9 @@
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 /* line 18, ../sass/mystyle.scss */
+hmtl {
+  font-size: 100%;
+}
 
 @font-face {
     font-family: 'MeteoconsRegular';
@@ -58,15 +61,15 @@ body a {
 
 /* line 48, ../sass/mystyle.scss */
 .glyphicon-2x {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .glyphicon-3x {
-  font-size: 55px;
+  font-size: 7.5rem;
 }
 
 .glyphicon-4x {
-  font-size: 4em;
+  font-size: 8rem;
 }
 
 /* line 52, ../sass/mystyle.scss */
@@ -79,7 +82,7 @@ body a {
 #bartop {
   background-color: #1abc9c;
   width: 100%;
-  height: 60px;
+  height: 45px;
   position: absolute;
   left: 0;
   right: 0;
@@ -184,13 +187,13 @@ body a {
 /* line 250, ../sass/mystyle.scss */
 
 .temp{
-  font-size : 3em;
+  font-size : 5.5rem;
   margin : 17px 0 0 0px;
   padding-left: 80px
 }
 
 .temp_2{
-  font-size: 0.95em;
+  font-size: 1.4rem;
 
 }
 
@@ -200,12 +203,12 @@ body a {
 
 .heure{
   margin-bottom: 80px;
-    font-size: 1.1em;
+    font-size: 3.0rem;
 }
 
 .quelJour{
   color: red;
-  font-size: 1.2em;
+  font-size: 2.2rem;
 }
 [data-icon]:before{
   font-family: 'MeteoconsRegular';
@@ -235,9 +238,14 @@ body a {
 
 /* line 198, ../sass/mystyle.scss */
 .thermo .bouttons .degre {
-  font-size: 3.0em;
-  font-height: bold;
+  font-size: 6.0rem;
+  font-weight: bold;
 }
+
 .thermo .footer{
   padding-right: 10px;
+}
+
+.bandeau  span:first-child{
+  padding-left: 20px;
 }
