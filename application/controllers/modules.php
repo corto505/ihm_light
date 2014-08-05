@@ -151,7 +151,8 @@ class Modules extends CI_Controller {
 		$data = array();
 
 		$this->load->model('Domo_md');
-		$monTabJson = $this->Domo_md->lireFileDomo ('json');
+		$monTabJson = $this->Domo_md->domo_dump ('json');
+		//$monTabJson = $this->Domo_md->lireFileDomo ('json');
 		$data['lesModules']  = $monTabJson['result'];
 		//echo '<pre/>';var_dump($data['lesModules']);die();
 
