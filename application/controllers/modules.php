@@ -33,7 +33,7 @@ class Modules extends CI_Controller {
 		$data = array('visu'=>'hidden');
 
 		if ($val){
-			$tabCde = explode(" ",$val);
+			$tabCde = explode(" ",$val); // decoupe l' URL
 			$ordre =  (isset($tabCde[0])) ? $tabCde[0] : 'erreur' ;
 			$module = (isset($tabCde[1])) ? $tabCde[1] : 'erreur' ;
 			$lieu =(isset($tabCde[2])) ? $tabCde[2] : 'erreur' ;
@@ -43,7 +43,7 @@ class Modules extends CI_Controller {
 				$key = strtolower($module."_".$lieu);
 				$ordre =strtolower($ordre);
 
-				// Oncharge le tablerau des commede et on verifie que celles envoyées existes
+				// On charge le tableau des commandes et on verifie que celles envoyées existes
 				$this->load->model('Domo_md');
 				$tableauModules = $this->Domo_md->tableauModules();
 				$commande = (array_key_exists($ordre, $tableauModules)) ? $tableauModules[$ordre] : 'erreur';
@@ -98,10 +98,10 @@ class Modules extends CI_Controller {
 	*  
 	*  http://$DOMO_IP:$DOMO_PORT/backupdatabase.php 
 	*/
-	public function send_cde($id,$cde){ 
+	public function send_cde($id,$cde,$who=''){ 
 	
 		$this->load->helper('file');
-		write_file('./assets/json/modules_debug.log', date('Y-m-d H:i').' : json.htm?type=command&param=switchlight&idx='.$id.'&switchcmd='.$cde."\r\n", 'a');
+		write_file('./assets/json/modules_debug.log', date('Y-m-d H:i').' : ('.$who.') json.htm?type=command&param=switchlight&idx='.$id.'&switchcmd='.$cde."\r\n", 'a');
 		
 		$url=prefrences("domoticz").'json.htm?type=command&param=switchlight&idx='.$id.'&switchcmd='.$cde.'&level=0';
 		//echo '<br> modules : URL = '.$url;
@@ -156,7 +156,8 @@ class Modules extends CI_Controller {
 		$data['lesModules']  = $monTabJson['result'];
 		//echo '<pre/>';var_dump($data['lesModules']);die();
 
-		$data['title']= 'Modules Domoticz';
+		date_default_timezone_set("Europe/Paris");
+		$data['ladate']= date('D, d F Y H:i');
 		$data['leType']= $type;
 		
 		if ($type=='Temp'){
@@ -165,5 +166,30 @@ class Modules extends CI_Controller {
 			$this->load->view('modules_vw',$data);//
 		}
 
-	}        
+	}
+
+
+	function sms_predefini($code,$return='ihm'){
+
+		$mess = '';
+		switch  ($code){
+			case 'test':
+				$mess = 'sms de test rpb1';
+			break;
+
+			default:
+
+			break;
+		}
+
+		if ($mess!=''){
+			$this->send_sms($mess);	
+		}  
+
+		if ($return=='txt'){
+			echo 'sms envoyé';
+		} else{
+			$this->form_chercher();
+		}   
+	}
 }

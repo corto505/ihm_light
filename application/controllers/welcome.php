@@ -9,6 +9,7 @@ class Welcome extends CI_Controller {
 	*/
 	public function index(){
 		//var_dump($this->config);die('xxx');
+		// tableau equivalence pour icones
 		$tabIcones = array(
 			'01d' => 'B',
 			'02d' => 'H',
@@ -70,6 +71,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_vw',$data);
 	}
 
+
 	/************************************
 	 * Affiche le contenu du log modules/sed_cde
 	 * @return [type] [description]
@@ -80,6 +82,23 @@ class Welcome extends CI_Controller {
 		$data['contenu'] = read_file('./assets/json/modules_debug.log');
 
 		$this->load->view('states_vw',$data);
+	}
+
+	/**
+	*  Suppression du fichier de trace
+	* avec un code pour la securite
+	*/
+	public function delfile($code=''){
+
+		if ($code=='master'){
+			$path = $_SERVER['DOCUMENT_ROOT'].'assets/json/modules_debug.log';
+			if (file_exists($path)){
+				$result = shell_exec('sudo chmod 777 '.$path);
+				unlink($path);	
+			}
+		}
+		$this->trace();
+
 	}
 
 	/*************************************

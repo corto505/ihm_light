@@ -3,6 +3,7 @@
     <div class="row">
 
     	 <div class="col-xs-11" >
+            <div><?php echo $ladate ; ?></div>
          <ul class="list_modules"> 
             <?php foreach ($lesModules as $key => $module) { ?>
                 <li class="cadre_meteo ligneMD "> 
