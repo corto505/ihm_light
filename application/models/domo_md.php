@@ -119,7 +119,9 @@ public function tableauModules(){
 		'ouvre'  => 'On',
 		'demarre' => 'On',
 		'eteind'  => 'Off',
+		'eteindre' => 'Off',
 		'arrete' => 'Off',
+		'arreter' => 'Off',
 		'ferme'  => 'Off'
 		);
 

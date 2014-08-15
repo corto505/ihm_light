@@ -1,2 +1,37 @@
 2014-08-10 12:04 : sms de test rpb1
 2014-08-10 12:08 : sms de test rpb1
+2014-08-10 18:17 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-10 21:07 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-11 09:12 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-11 20:44 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-12 11:14 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-12 11:57 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-12 12:21 : () json.htm?type=command&param=switchlight&idx=44&switchcmd=On
+2014-08-12 12:21 : Votre demande a ete envoyee
+2014-08-12 12:22 : () json.htm?type=command&param=switchlight&idx=44&switchcmd=Off
+2014-08-12 12:22 : Votre demande a ete envoyee
+2014-08-12 18:15 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-13 10:55 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-13 14:21 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-13 23:38 : () json.htm?type=command&param=switchlight&idx=11&switchcmd=On
+2014-08-13 23:38 : Votre demande a ete envoyee
+2014-08-13 23:39 : () json.htm?type=command&param=switchlight&idx=11&switchcmd=Off
+2014-08-13 23:39 : () json.htm?type=command&param=switchlight&idx=11&switchcmd=Off
+2014-08-13 23:39 : Votre demande a ete envoyee
+2014-08-13 23:39 : Votre demande a ete envoyee
+2014-08-14 10:06 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-14 10:06 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-15 18:56 : sms de test rpb1
+2014-08-15 18:56 : Votre%20demande%20a%20YotYo%20envoyYoe
+2014-08-15 18:58 : Votre%20demande%20a%20YotYo%20envoyYoe
+2014-08-15 18:59 : Votre_demande_a_ete_envoyYoe
+2014-08-15 19:00 : send sms : Votre_demande_a_ete_envoyYoe
+2014-08-15 19:02 : send sms : Votre_demande_a_ete_envoyYoe
+2014-08-15 19:03 : () json.htm?type=command&param=switchlight&idx=9&switchcmd=On
+2014-08-15 19:03 : send sms : Votre demande a ete envoyee
+2014-08-15 19:06 : () json.htm?type=command&param=switchlight&idx=9&switchcmd=Off
+2014-08-15 19:06 : send sms : Cde : eteind lampe bureau_4 envoyee
+2014-08-15 19:11 : (RPB1) json.htm?type=command&param=switchlight&idx=9&switchcmd=On
+2014-08-15 19:11 : send sms : Cde : allume lampe bureau_4 envoyee
+2014-08-15 19:11 : (RPB1) json.htm?type=command&param=switchlight&idx=9&switchcmd=Off
+2014-08-15 19:11 : send sms : Cde : eteind lampe bureau_4 envoyee

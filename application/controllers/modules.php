@@ -50,9 +50,9 @@ class Modules extends CI_Controller {
 
 
 				if ((array_key_exists($key, $tableauModules)) and ($commande!='erreur')){
-					$data['laCde']='Votre demande a ete envoyee';
+					$data['laCde']='Cde : '.$val.' envoyee';
 					$data['visu'] = 'alert-success';
-					$status = $this->send_cde($tableauModules[$key],$commande);
+					$status = $this->send_cde($tableauModules[$key],$commande,'RPB1');
 					//@@TODO : tester un retourn si possible
 					if($status =='OK'){
 						$this->send_sms($data['laCde']); //die('sms');
@@ -114,31 +114,34 @@ class Modules extends CI_Controller {
 		
         }
 
-       /**
-        * Permet d'envoyer des sms par gateway SMS sur HTC
+
+    
+        /**
+        * Permet d'envoyer des sms par gateway nodejs -->  HTC
         * @param  [type] $message [description]
         * @param  string $tel     [description]
         * @return [type]          [description]
         */
-      public function send_sms($message,$tel=''){
+      public function send_sms($message){
 
-      	if ($tel=='')
-      		$tel = prefrences("phone");
+	
+	      	$this->load->helper('file');
+			write_file('./assets/json/modules_debug.log', date('Y-m-d H:i').' : send sms : '.$message."\r\n", 'a');
 
-      	$this->load->helper('file');
-		write_file('./assets/json/modules_debug.log', date('Y-m-d H:i').' : '.$message."\r\n", 'a');
+			$message = urlencode($message);
+			//str_replace(' ','%20',$message);
+			//	echo($message);
+			//	@@TODO enlever les commentaires
+			$url=prefrences("htc_sms").'sms/'.$message;
+			  //var_dump($url);die();
 
-		$message = urlencode($message);
-		//str_replace(' ','%20',$message);
-	//	echo($message);
-	//	@@TODO enlever les commentaires
-		$url=prefrences("htc_sms").'sendsms?phone='.$tel.'&text='.$message.'&password=tedjyx33';
-		
-		$content = curl_json($url);
-		
-		//return $content['status'];
-		//var_dump($content);die('content_sms');
+			$content = curl_json($url);
+			
+			//return $content['status'];
+			//var_dump($content);die('content_sms');
       }
+
+
 
 /**
  *  Affiche les modules par pieces 

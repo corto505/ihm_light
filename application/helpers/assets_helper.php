@@ -84,7 +84,7 @@ if(!function_exists('prefrences'))
 				break;
 
 			case 'htc_sms':
-				return "http://192.168.0.60:9090/";
+				return "http://192.168.0.64:3000/"; // on passe par nodeJS
 				break;
 
 			case 'phone':

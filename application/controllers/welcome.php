@@ -101,16 +101,46 @@ class Welcome extends CI_Controller {
 
 	}
 
-	/*************************************
-	*   AFFICHE La page pour google API speech
-	*/
-	public function speech() 
-	{
-		$data['title']= 'Sunthèse vocale';
-		$data['leType']= 'voix';
-		$this->load->view('speech_vw',$data);
-		//$this->meteo_api('caen','txt');
+
+
+/******************   TEST DIVERS *******************/
+public function milight(){
+
+
+ 	echo '$$$$$$$$$';
+	
+	$server_ip   = '192.168.0.67';
+	$server_port = 8899;
+	$beat_period = 5;
+	$message     = "\x39\x00\x55";
+	print "Sending heartbeat to IP $server_ip, port $server_port\n";
+	print "press Ctrl-C to stop\n";
+	if ($socket = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP)) {
+	 
+	    $r= socket_sendto($socket, $message, strlen($message), 0, $server_ip, $server_port);
+	    usleep(100);
+	    $message     = "\x3B\x00\x55";
+	   	    $r= socket_sendto($socket, $message, strlen($message), 0, $server_ip, $server_port);
+		 //var_dump($socket);
+	     usleep(100);
+	         $message     = "\xBB\x00\x55";
+	   	    $r= socket_sendto($socket, $message, strlen($message), 0, $server_ip, $server_port);
+
+	} else {
+	  print("can't create socket\n");
 	}
+}
+
+
+/*************************************
+*   AFFICHE La page pour google API speech
+*/
+public function speech() {
+	$data['title']= 'Sunthèse vocale';
+	$data['leType']= 'voix';
+	$this->load->view('speech_vw',$data);
+	//$this->meteo_api('caen','txt');
+}
 
  
 }
