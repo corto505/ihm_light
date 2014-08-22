@@ -35,3 +35,12 @@
 2014-08-15 19:11 : send sms : Cde : allume lampe bureau_4 envoyee
 2014-08-15 19:11 : (RPB1) json.htm?type=command&param=switchlight&idx=9&switchcmd=Off
 2014-08-15 19:11 : send sms : Cde : eteind lampe bureau_4 envoyee
+2014-08-17 11:12 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-17 12:13 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-17 16:56 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-17 21:10 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-19 11:27 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-20 01:27 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-21 15:52 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-21 19:40 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-22 08:44 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On

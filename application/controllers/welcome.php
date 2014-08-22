@@ -71,6 +71,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_vw',$data);
 	}
 
+/**
+*  Permet de tester le service
+*  http://192.168.0.64:8090/ihm/index.php/welcome/test_ping
+*/
+public function test_ping(){
+	echo(  json_encode('resultat ok'));
+
+}
 
 	/************************************
 	 * Affiche le contenu du log modules/sed_cde
