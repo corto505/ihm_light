@@ -62,6 +62,7 @@ class Modules extends CI_Controller {
 					}
 
 				}else{
+					//var_dump($tableauModules);die();
 					$data['laCde']='Je n\'ai pas trouvé de résultat';
 					$data['visu'] = 'alert-warning';
 				}

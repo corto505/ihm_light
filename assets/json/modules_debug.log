@@ -44,3 +44,20 @@
 2014-08-21 15:52 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
 2014-08-21 19:40 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
 2014-08-22 08:44 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-22 14:19 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-22 17:38 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-23 10:45 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-23 10:45 : (dd) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-23 11:04 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-23 19:44 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-24 09:38 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-24 13:19 : (RPB1) json.htm?type=command&param=switchlight&idx=69&switchcmd=On
+2014-08-24 13:19 : send sms : Cde : allume volet_entree salle envoyee
+2014-08-24 13:25 : (RPB1) json.htm?type=command&param=switchlight&idx=69&switchcmd=On
+2014-08-24 13:25 : send sms : Cde : ouvre volet_entree salle envoyee
+2014-08-24 14:50 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=Off
+2014-08-24 14:51 : (mm) json.htm?type=command&param=switchlight&idx=49&switchcmd=On
+2014-08-24 14:51 : (mm) json.htm?type=command&param=switchlight&idx=71&switchcmd=On
+2014-08-24 14:54 : (mm) json.htm?type=command&param=switchlight&idx=71&switchcmd=On
+2014-08-24 14:55 : (mm) json.htm?type=command&param=switchlight&idx=71&switchcmd=On
+2014-08-24 20:26 : (mm) json.htm?type=command&param=switchlight&idx=71&switchcmd=On
