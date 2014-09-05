@@ -109,7 +109,17 @@ public function test_ping(){
 
 	}
 
+/**
+* Ecran d'affichage info sur ecran 7"
+*
+*/
+public function visu_vga_pi(){
 
+	$data['ladate'] =Date('H:m:s');
+	//var_dump($data);die();
+	$this->load->view('vga_vw',$data);
+
+}
 
 /******************   TEST DIVERS *******************/
 public function milight(){
