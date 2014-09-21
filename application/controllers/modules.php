@@ -5,6 +5,7 @@ class Modules extends CI_Controller {
 	
 	/***********************
 	*  Par defaut affiche les lumieres
+	* techno : No UI, function filtre
 	*  status : ok
 	*/
 	public function index(){ //ok
@@ -13,6 +14,7 @@ class Modules extends CI_Controller {
 	
     /***************************
 	*  Les des # thermomètres
+	* techno : No UI, function filtre
 	*  status : ok
 	*/
 	public function thermo(){		
@@ -21,8 +23,8 @@ class Modules extends CI_Controller {
 
  /********************************
 	*  Les des # Faux formulaire de recherche
-	*  permet d 'exucuter des commande'
-	*  Om peut envoyer les donnée par  
+	*  permet d 'executer des commandes'
+	*  Om peut envoyer les données par  
 	*  POST = formulaie via internet 
 	*  GET = par reroutage (forwading) de sms via HTC : index.php/modules/form_chercher?la_recherche=allumer%20radiateur%20chambre
 	*  status : ok

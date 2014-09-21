@@ -5,6 +5,7 @@ class Welcome extends CI_Controller {
 	/*****************************
 	* Ecran minimaliste => affiche la meteo sur une semaine
 	* Modifiée :  le 28/07/2014
+	* Techno : PHP , No Angular
 	* status : ok
 	*/
 	public function index(){
@@ -83,6 +84,7 @@ public function test_ping(){
 	/************************************
 	 * Affiche le contenu du log modules/sed_cde
 	 * @return [type] [description]
+	 * techno : PHP , No Angular
 	 * status : ok
 	 */
 	public function trace(){
@@ -95,6 +97,7 @@ public function test_ping(){
 	/**
 	*  Suppression du fichier de trace
 	* avec un code pour la securite
+	* techno : No UI, 
 	*/
 	public function delfile($code=''){
 
@@ -111,7 +114,7 @@ public function test_ping(){
 
 /**
 * Ecran d'affichage info sur ecran 7"
-*
+* techno : PHP , choix non defenitif
 */
 public function visu_vga_pi(){
 
@@ -122,6 +125,10 @@ public function visu_vga_pi(){
 }
 
 /******************   TEST DIVERS *******************/
+
+/*
+*  Pas utilise - test Phil
+*/
 public function milight(){
 
 
@@ -152,6 +159,7 @@ public function milight(){
 
 /*************************************
 *   AFFICHE La page pour google API speech
+*  En attente !!
 */
 public function speech() {
 	$data['title']= 'Sunthèse vocale';
