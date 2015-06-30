@@ -69,6 +69,7 @@ class Welcome extends CI_Controller {
 		}
 
 		//echo '<pre>';var_dump($data['meteo']);die();
+		$this->output->cache(30);
 		$this->load->view('welcome_vw',$data);
 	}
 

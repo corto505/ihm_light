@@ -9,6 +9,7 @@ class Modules extends CI_Controller {
 	*  status : ok
 	*/
 	public function index(){ //ok
+		$this->output->cache(120);
 		$this->liste_modules('Lighting');
      }
 	
@@ -18,6 +19,7 @@ class Modules extends CI_Controller {
 	*  status : ok
 	*/
 	public function thermo(){		
+		$this->output->cache(10);
 		$this->liste_modules('Temp');
      }
 
@@ -166,6 +168,8 @@ class Modules extends CI_Controller {
 		$data['ladate']= date('D, d F Y H:i');
 		$data['leType']= $type;
 		
+		$this->output->cache(360);
+
 		if ($type=='Temp'){
 			$this->load->view('temp_vw',$data);//
 		}else{
