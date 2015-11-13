@@ -8,8 +8,9 @@ class Welcome extends CI_Controller {
 	* Techno : PHP , No Angular
 	* status : ok
 	*/
+	
 	public function index(){
-		//var_dump($this->config);die('xxx');
+		var_dump($this->config);die('xxx');
 		// tableau equivalence pour icones
 		$tabIcones = array(
 			'01d' => 'B',
@@ -34,6 +35,7 @@ class Welcome extends CI_Controller {
 		$this->load->model('Meteo_md');
 		//$monTabJson = $this->Meteo_md->lireFileMeteo ('meteo_dump','json'); // pur test
 		$monTabJson = $this->Meteo_md->meteo_api ('caen','json');
+		//var_dump($monTabJson);die('xxx');
 		//$monTabJson = json_decode($result,true);
 		$meteo = $monTabJson['list'];
 		//echo '<pre>';var_dump($meteo);die();
@@ -124,6 +126,80 @@ public function visu_vga_pi(){
 	$this->load->view('vga_vw',$data);
 
 }
+
+//============  TEST CURL HORAIRE SAS ============
+
+/**
+ * Interroge le site des horaires et retoune un json
+ * @param  [type] $jour [description]
+ * @param  [type] $mois [description]
+ * @return [type]       [description]
+ */
+	function sas($jour=null,$mois=null){
+		if ($jour==null){
+			$jour = date('d');
+		}
+		if ($mois==null){
+			$mois = date('m');
+		}
+		$url='http://www.ouistreham-plaisance.com/web/horaires-des-sas.php/horaires-des-sas.php?jours='.$jour.'&mois='.$mois.'&valider=Rechercher';
+	   // debug($url,'end');
+	        $ch = curl_init();
+	        $timeout = 5;
+	        curl_setopt($ch, CURLOPT_URL, $url);
+	        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+	        $html = curl_exec($ch);
+	        curl_close($ch);
+
+	        # Create a DOM parser object
+	        $dom = new DOMDocument();
+	        # Parse the HTML from Google.
+	        # The @ before the method call suppresses any warnings that
+	        # loadHTML might throw because of invalid HTML in the page.
+	        @$dom->loadHTML($html);
+	        $table = $dom->getElementsByTagName('tr');
+	        $text='';
+	        $i=0;
+	        $tabResult = array();
+	        foreach($table as $elemt){
+
+	        	$td= $elemt->getElementsByTagName('td');
+	        	foreach($td as $item){
+	        		$text .= $i.' => '.$item->nodeValue.'</br>';
+	        		$i+=1;
+
+	        		if($i>3){
+	        			switch ($i) {
+	        			case '4':
+	        				$tabResult['jour']=$item->nodeValue;
+	        				break;
+	        			case '5':
+	        				$tabResult['journ']=$item->nodeValue;
+	        				break;
+	        			default:
+	        				$tabResult['horaire'][]=trim($item->nodeValue);
+	        				break;
+	        			}
+	        		}
+	        		
+	        	}
+	        }
+	        $myjson = json_encode($tabResult);
+	      	//debug($myjson,'dev');
+	      	return $myjson;
+		}	
+
+	function showhoraire(){
+		$result = $this->sas();
+		$data['heure'] = json_decode($result,TRUE);
+		//debug($data,'dfqsd');
+	// if (!log_sys("Creation sas"))
+	 //		$data['heure']['jour']='erreur';
+
+		$this->load->view('welcome_test_horaire_vw',$data);
+	}	
+
 
 /******************   TEST DIVERS *******************/
 

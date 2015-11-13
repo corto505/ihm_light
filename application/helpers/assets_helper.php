@@ -56,7 +56,7 @@ if(!function_exists('curl_json'))
 
 		// Execute request
 		$result = curl_exec($ch);
-		//echo '<pre/>';var_dump($result);//die();
+		//echo '<pre/>';var_dump($result);die();
 		// Close connection
 		curl_close($ch);
 

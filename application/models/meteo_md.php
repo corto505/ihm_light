@@ -25,6 +25,7 @@ class Meteo_md extends CI_Model {
 		curl_close($ch); 
 		$var_json = json_decode($c, true);*/
 		$var_json = curl_json($url,'json');
+		//var_dump($var_json);die('rrrrrr');
 		//*********  Aiguillage des sorties  ***********
 		switch ($sortie) {
 			case 'debug':
