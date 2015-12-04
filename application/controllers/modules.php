@@ -2,10 +2,6 @@
 
 class Modules extends CI_Controller {
 
-	<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Modules extends CI_Controller {
-
 	
 	/***********************
 	*  Par defaut affiche les lumieres
@@ -206,5 +202,4 @@ class Modules extends CI_Controller {
 			$this->form_chercher();
 		}   
 	}
-}
 }

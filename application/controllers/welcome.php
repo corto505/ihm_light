@@ -10,7 +10,7 @@ class Welcome extends CI_Controller {
 	*/
 	
 	public function index(){
-		var_dump($this->config);die('xxx');
+		//var_dump($this->config);die('xxx');
 		// tableau equivalence pour icones
 		$tabIcones = array(
 			'01d' => 'B',
@@ -137,13 +137,13 @@ public function visu_vga_pi(){
  */
 	function sas($jour=null,$mois=null){
 		if ($jour==null){
-			$jour = date('d');
+			$jour = date('j');
 		}
 		if ($mois==null){
 			$mois = date('m');
 		}
 		$url='http://www.ouistreham-plaisance.com/web/horaires-des-sas.php/horaires-des-sas.php?jours='.$jour.'&mois='.$mois.'&valider=Rechercher';
-	   // debug($url,'end');
+	   	//debug($url,'end');
 	        $ch = curl_init();
 	        $timeout = 5;
 	        curl_setopt($ch, CURLOPT_URL, $url);
